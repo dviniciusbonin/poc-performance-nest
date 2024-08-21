@@ -1,0 +1,17 @@
+services:
+  express:
+    build: ./poc-express
+    ports:
+      - "4000:4000"
+
+  fastify:
+    build: ./poc-fastify
+    ports:
+      - "3000:3000"
+
+  autocannon:
+    build: ./autocannon
+    command: ["sh", "-c", "sleep infinity"]
+    depends_on:
+      - express
+      - fastify
