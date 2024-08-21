@@ -1,4 +1,4 @@
-# POC - Perfmonce test in nest
+# POC - Perfmance test in nest
 
 The goal of this repository is to analyze performance between Express and Fastify in NestJS. For this test, a simple example of Fibonacci implementation is used.
 
